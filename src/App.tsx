@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.scss";
 
 const App: React.FC = () => {
   return (
@@ -7,6 +7,6 @@ const App: React.FC = () => {
       <h1>Hello World</h1>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,3 +1,7 @@
 .App {
-  text-align: center;
+  .wu-button{
+    &.test{
+      color: burlywood;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import { Button } from "./components";
+import { Button, Icon } from "./components";
 
 const App: React.FC = () => {
   const clickButton = () => {
@@ -39,6 +39,12 @@ const App: React.FC = () => {
       <Button disabled={true} onClick={clickButton}>
          disabled
       </Button>
+      <hr />
+      <Icon name="loading"></Icon>
+      <Icon name="up"></Icon>
+      <Icon name="down"></Icon>
+      <Icon name="left"></Icon>
+      <Icon name="right"></Icon>
     </div>
   );
 };

@@ -10,35 +10,44 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Button type="default" onClick={clickButton}>
-         default
+        default
       </Button>
       <Button type="primary" onClick={clickButton}>
-         primary
+        primary
       </Button>
       <Button type="danger" onClick={clickButton}>
-         andger
+        andger
       </Button>
       <hr />
       <Button size="small" onClick={clickButton}>
-         small
+        small
       </Button>
       <Button size="medium" onClick={clickButton}>
-         medium
+        medium
       </Button>
       <Button size="large" onClick={clickButton}>
-         large
+        large
       </Button>
       <hr />
       <Button className="test" onClick={clickButton}>
-         自定义class
+        自定义class
       </Button>
-      <Button style={{backgroundColor: 'green'}} onClick={clickButton}>
-         自定义style
+      <Button style={{ backgroundColor: "green" }} onClick={clickButton}>
+        自定义style
       </Button>
       <hr />
       <Button disabled={true} onClick={clickButton}>
-         disabled
+        disabled
       </Button>
+      <hr />
+      <Button loading={true}>loading</Button>
+      <Button loading={true} size="large">
+        loading
+      </Button>
+      <Button icon="up">up</Button>
+      <Button icon="down">down</Button>
+      <Button icon="left">left</Button>
+      <Button icon="right">right</Button>
       <hr />
       <Icon name="loading"></Icon>
       <Icon name="up"></Icon>

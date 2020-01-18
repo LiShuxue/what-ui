@@ -1,6 +1,7 @@
 import React from "react";
 import classnames from "classnames";
 import "./button.scss";
+import Icon from "../icon/icon";
 
 export interface ButtonProps {
   className?: string;
@@ -27,7 +28,21 @@ const Button = (props: ButtonProps) => {
     children
   } = props;
 
-  const buttonClasses = classnames("wu-button", type, size, className);
+  const buttonClasses = classnames(
+    "wu-button",
+    type,
+    size,
+    { disabled: disabled || loading },
+    className
+  );
+
+  const renderIcon = () => {
+    return loading ? (
+      <Icon name="loading"></Icon>
+    ) : (
+      icon && <Icon name={icon}></Icon>
+    );
+  };
 
   return (
     <button
@@ -36,6 +51,7 @@ const Button = (props: ButtonProps) => {
       disabled={disabled}
       onClick={onClick}
     >
+      {renderIcon()}
       {children}
     </button>
   );

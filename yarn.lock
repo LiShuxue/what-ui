@@ -1550,6 +1550,11 @@
     "@types/react-dom" "*"
     "@types/testing-library__dom" "*"
 
+"@types/webpack-env@^1.15.0":
+  version "1.15.0"
+  resolved "https://registry.npm.taobao.org/@types/webpack-env/download/@types/webpack-env-1.15.0.tgz#bd9956d5044b1fb43e869a9ba9148862ff98d9fd"
+  integrity sha1-vZlW1QRLH7Q+hpqbqRSIYv+Y2f0=
+
 "@types/yargs-parser@*":
   version "15.0.0"
   resolved "https://registry.npm.taobao.org/@types/yargs-parser/download/@types/yargs-parser-15.0.0.tgz#cb3f9f741869e20cce330ffbeb9271590483882d"
